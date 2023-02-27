@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <img src="./mohamed_mohi_programming_look_behind_the_scenes_javascript_b7122bba-8890-4a1d-b5f7-91a4aeed5312.png" id="image1" width="300" height="200">
+<img src="./mohamed_mohi_coder_look_at_primitive_and_reference_data_types_i_781df6c4-87c5-450e-9ff5-4730ef9506b3.png" id="image2" width="300" height="200">
+<img src="./mohamed_mohi_coder_look_at_primitive_and_reference_data_types_i_b032c8f5-16bb-4f43-a13b-c896528b1992.png" id="image3" width="300" height="200">
+
+<script>
+    // Define an array of image URLs
+    var images = [
+      "mohamed_mohi_programming_look_behind_the_scenes_javascript_b7122bba-8890-4a1d-b5f7-91a4aeed5312.png",
+      "mohamed_mohi_coder_look_at_primitive_and_reference_data_types_i_781df6c4-87c5-450e-9ff5-4730ef9506b3.png",
+      "mohamed_mohi_coder_look_at_primitive_and_reference_data_types_i_b032c8f5-16bb-4f43-a13b-c896528b1992.png"
+    ];
+    
+    // Get a random index from the images array
+    var randomIndex = Math.floor(Math.random() * images.length);
+    
+    // Set the src attribute of each image tag to the corresponding image URL
+    document.getElementById("image1").src = images[randomIndex];
+    randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("image2").src = images[randomIndex];
+    randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("image3").src = images[randomIndex];
+  </script>
+  
+</body>
+</html>
